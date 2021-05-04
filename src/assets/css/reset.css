@@ -1,0 +1,23 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li,div, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; } 
+body, button, input, select, textarea {margin:0;padding:0;border: 0; } 
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight:normal;} 
+html,body{width: 100%;font-family: 'Microsoft Yahei', Helvetica, Arial, sans-serif;font-size: 100%;}
+em{ font-style:normal; }  
+small{ font-size:12px; } 
+ul, ol { list-style:none; } 
+a{ text-decoration:none; } 
+fieldset, img { border:0; } 
+button, input, select, textarea { font-size:100%; } 
+table { border-collapse:collapse; border-spacing:0; }
+img{-ms-interpolation-mode:bicubic;border:0;vertical-align:middle;}
+button,
+input,
+select,
+label,
+textarea {
+    margin: 0;
+    vertical-align: baseline;
+    outline: none;
+    font-family: inherit;
+}
+i,em,strong{font-style:normal;}

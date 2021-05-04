@@ -1,0 +1,9 @@
+{
+    "presets": [
+      [ "env",
+        { "modules": false }
+      ]
+    ],
+    "plugins": ["transform-remove-strict-mode"],
+    "ignore": ["./src/assets/js/rev/page/spread.js"]
+  }

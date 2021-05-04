@@ -1,0 +1,206 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="您的网站名称" />
+    <meta name="description" content="您的网站名称" />
+    <meta name="author" content="" />
+    <title>入金存款</title>
+  </head>
+
+  <body>
+    <div class="page-content">
+      <div class="title">
+        <i class="fa fa-user-circle-o"></i>入金存款<span
+          class="right"
+          style="margin-right: 38px; cursor: pointer;"
+          ><i class="fa fa-arrow-right"></i
+          ><a
+            href="javascript:void(0);"
+            onclick="history.go(-1)"
+            style="color: rgb(255, 255, 41);"
+            >返回</a
+          ></span
+        >
+      </div>
+      <div class="content t20">
+        <div class="account-box">
+          <div class="content-wrap">
+            <div class="fill-form fill-form2" id="rechargeForm">
+              <dl>
+                <dt class="money"></dt>
+                <dd>
+                  <input
+                    type="text"
+                    name="to_money"
+                    placeholder="请输入入金金额"
+                  />
+                  <div
+                    class="fill-tip"
+                    id="depositLimit"
+                    style="display: none;"
+                  >
+                    (提示：入金上限：<span class="max"></span>元,入金下限：<span
+                      class="min"
+                    ></span
+                    >元)
+                  </div>
+                </dd>
+              </dl>
+              <dl style="padding: 5px 0px 10px;">
+                <dt>支付通道</dt>
+                <dd>
+                  <div
+                    class="c-radio paylist clear-fix"
+                    style="max-width: 1200;"
+                  >
+                    <!--<div class="c-radio-item">
+											<span class="c-radio-icon"><i class="iconfont icon-radio"></i></span>
+											<input class="c-radio-icon" type="radio" />
+											<span class="pay-icon pay-42"></span>
+											<p class="channel">紫牛支付</p>
+										</div>
+										<div class="c-radio-item">
+											<input class="c-radio-icon" type="radio" />
+											<span class="pay-icon pay-42"></span>
+											<p class="channel">紫牛支付</p>
+										</div>-->
+                  </div>
+                  <input type="hidden" id="bank_name" value="" />
+                  <div
+                    class="channel_comment clear-fix"
+                    style="color: #ff0000;"
+                  ></div>
+                  <ul class="deposit-bank-list clear-fix"></ul>
+                </dd>
+              </dl>
+              <dl class="weimazhifu" style="display: none; margin-top: 0;">
+                <!-- <dt style="width:140px;font-weight:100;color:#333;">请选择充值金额：</dt> -->
+                <dd style="width: 652px;">
+                  <div class="choice-money-box">
+                    <h3
+                      style="
+                        width: 120px;
+                        font-weight: 100;
+                        color: #333;
+                        display: inline-block;
+                        margin-left: 30px;
+                      "
+                    >
+                      请选择入金金额：
+                    </h3>
+                    <div
+                      class="choice-money"
+                      style="display: inline-block; width: 492px;"
+                    ></div>
+                  </div>
+                  <div class="choice-payment-method-box">
+                    <h3
+                      style="
+                        width: 120px;
+                        font-weight: 100;
+                        color: #333;
+                        display: inline-block;
+                        margin-left: 30px;
+                      "
+                    >
+                      请选择支付方式：
+                    </h3>
+                    <div
+                      class="choice-payment-method"
+                      style="display: inline-block; width: 492px;"
+                    >
+                      <!-- <span data-type="1">微信</span> -->
+                      <span data-type="2">支付宝</span>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+              <dl>
+                <a class="c-submit-btn" id="rechargeSubmit" target="_blank"
+                  >提交</a
+                >
+                <a
+                  class="c-submit-btn"
+                  id="rechargeSubmit1"
+                  target="_blank"
+                  style="display: none;"
+                  >提交</a
+                >
+              </dl>
+              <dl
+                id="infoshow"
+                style="color: white; padding: 0 50px 10px 50px;"
+              >
+                <span>
+                  由於公司財務管理制度，每日17點后資金需扎帳匯總到三方銀行托管，故入金時間為工作日周一至周五09:00點至17:00点，其余時間暫不辦理入金。
+                </span>
+              </dl>
+              <dl
+                id="off_line_show"
+                style="color: white; padding: 0 50px 10px 50px;"
+              >
+                <p>关于转帐到款时间说明：</p>
+                <p>
+                  1、工作日17点30分前转帐的，承诺在资金到帐后的半小时内完成充值
+                </p>
+                <p>
+                  2、工作日17点30分以后转帐的，承诺在第二个工作日的早上9点完成充值
+                </p>
+                <p>3、非工作日转帐的，承诺在下一工作的早上9点完成充值</p>
+                <p>4、请使用实名认证后对应姓名的银卡进行转帐</p>
+                <p>5、如未能及时充值，请联繫客服</p>
+              </dl>
+            </div>
+
+            <div class="payment-box">
+              <div class="payment-title">
+                支付 <i class="fa fa-close right"></i>
+              </div>
+              <div class="payment-content">
+                <h4 style="padding: 20px;">支付金额：<span></span></h4>
+                <h4><img src="" alt="" width="200" height="200" /></h4>
+                <p></p>
+              </div>
+              <div class="yizhifu">
+                <a class="ss-btn1 loadPage" href="#page/detail.html"
+                  >已支付<span
+                    class="count-down"
+                    style="padding-left: 5px;"
+                  ></span
+                ></a>
+              </div>
+              <div class="tishi">
+                <strong>温馨提示：</strong>
+                <p>
+                  1、若在存款中提示二维码已过期或存入金额已满,请刷新页面后重新下单；
+                </p>
+                <p>
+                  2、为确保每一位客户存款能及时到账，每笔存款金额，系统均智能生成两位小数；
+                </p>
+              </div>
+            </div>
+            <div
+              class="wenzitishi"
+              style="
+                width: 100%;
+                position: fixed;
+                left: 0;
+                top: 48%;
+                text-align: center;
+                color: #fff;
+                z-index: 100;
+                display: none;
+              "
+            ></div>
+            <div class="bg"></div>
+          </div>
+        </div>
+      </div>
+      <script
+        type="text/javascript"
+        src="../assets/js/page/recharge.js"
+      ></script>
+    </div>
+  </body>
+</html>

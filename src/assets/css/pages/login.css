@@ -1,0 +1,96 @@
+.login-con {
+	width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.login-box {
+	width: 500px;
+	background: rgba(255,255,255,.5);
+	border-radius: 7px;
+	position: absolute;
+	left: 50%;
+	margin-left: -300px;
+	padding: 50px 50px 0;
+}
+
+.login-box input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px #fff inset!important;
+	-webkit-text-fill-color: #000!important;
+}
+
+.login-box li {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+	position:relative;
+	background:#fff;
+	border-radius:7px;
+	padding-left:7px;
+}
+
+.login-box li i {
+	padding-right: 8px;
+	color: #666;
+}
+
+.login-box li input {
+	line-height: 48px;
+	width: 390px;
+	border-radius: 7px;
+	padding-left: 7px;
+	color: #666;
+	height:48px;
+	background:none;
+	opacity: 0.8;
+}
+
+.login-box li button {
+	width: 300px;
+	line-height: 49px;
+	background-color: #C3181F;
+	color: #fff;
+	border-radius: 22px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	font-size: 20px;
+	cursor: pointer;
+}
+.login-box .li-box{
+   text-align:right;	
+}
+.login-box .li-box em{
+	cursor: pointer;
+}
+.login-box .li-box em:hover{
+	color:#C3181F;
+}
+.login-box li a {
+	color: #C3181F;
+	font-size: 20px;
+}
+
+.login-box li span {
+	color: #333;
+}
+
+#loginVcode {
+	cursor: pointer;
+}
+
+#yanzhengma,#mobileCode{
+	position:absolute;
+	right:0;
+	top:1px;
+    cursor: pointer;
+    color:#fff;
+    background:#C3181F;
+    padding:13px 16px;
+    border-radius: 7px;
+}
+.hide{
+	display:none;
+}

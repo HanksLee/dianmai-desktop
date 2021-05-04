@@ -1,0 +1,31 @@
+li.protocol-wrap {
+  background: initial;
+  border-bottom: initial;
+}
+.protocol {
+  bottom: 0.4rem;
+  text-align: center;
+  width: 100%;
+  font-size: 0.24rem;
+}
+li .protocol span {
+  font-size: 16px;
+  color: #333;
+}
+
+li .protocol a {
+  font-size: 16px;
+  color: #333;
+}
+
+.protocol i {
+  color: #333;
+  font-size: 20px;
+  position: relative;
+  top: 0.04rem;
+}
+
+.protocol.active i,
+.protocol.active a {
+  color: #c3181f;
+}

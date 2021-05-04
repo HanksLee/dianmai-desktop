@@ -1,0 +1,171 @@
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="您的网站名称" />
+		<meta name="description" content="您的网站名称" />
+		<meta name="author" content="">
+		<title>出金取款</title>
+	</head>
+
+	<body>
+		<div class="page-content">
+			<div class="title"><i class="fa fa-user-circle-o"></i>出金取款<span class="right" style="margin-right:38px;cursor: pointer;"><i class="fa fa-arrow-right"></i><a href="javascript:void(0);" onclick="history.go(-1)" style="color:rgb(255,255,41);">返回</a></span></div>
+			<div class="content t20">
+				<div class="account-box">
+					<div class="content-wrap">
+						<div class="tab" style="padding:10px 0 0 0;">
+								<div class="c-radio">
+										<div class="c-radio-item radio-item active" data-id="1">
+											<span class="radio-icon"></span>
+											<p class="channel"></p>
+										</div>
+										<!-- <div class="c-radio-item radio-item" data-id="3">
+											<span class="radio-icon"></span>
+											<p class="channel">港元</p>
+										</div>
+										<div class="c-radio-item radio-item" data-id="2">
+											<span class="radio-icon"></span>
+											<p class="channel">美元</p>
+										</div> -->
+									</div>
+						</div>
+						<div class="fill-form fill-form2" id="withdrawForm">
+							<!-- <dl class="hk-us">
+								<dt>户口持有人姓名</dt>
+								<dd>
+									<input type="text" name="bank_user_name" placeholder="请输入户口持有人姓名">
+								</dd>
+							</dl> -->
+							<!-- <dl class="hk-us">
+								<dt>户口号码</dt>
+								<dd>
+									<input type="text" name="bank_user_name" placeholder="请输入户口号码">
+								</dd>
+
+							</dl>
+							<dl class="hk-us">
+								<dt>开户行</dt>
+								<dd>
+									<input type="text" name="bank_user_name" placeholder="请输入开户行">
+								</dd>
+							</dl>
+							<dl class="hk-us">
+								<dt>开户分行</dt>
+								<dd>
+									<input type="text" name="bank_user_name" placeholder="请输入开户分行">
+								</dd>
+							</dl>
+							<dl class="hk-us">
+								<dt>开户行具体地址</dt>
+								<dd>
+									<input type="text" name="bank_user_name" placeholder="请输入开户行具体地址">
+								</dd>
+							</dl>
+							<dl class="hk-us">
+								<dt>手续费</dt>
+								<dd>
+									<input type="text" name="bank_user_name" placeholder="手续费" disabled>
+								</dd>
+							</dl>
+							<dl class="hk-us">
+								<dt>汇率</dt>
+								<dd>
+									<input type="text" name="bank_user_name" placeholder="汇率" disabled>
+								</dd>
+							</dl>
+							<dl class="hk-us">
+								<dt>备注</dt>
+								<dd>
+									<input type="text" name="comment" placeholder="请输入备注">
+								</dd>
+							</dl> -->
+							<dl>
+								<dt>姓名</dt>
+								<dd>
+									<input type="text" name="bank_user_name" placeholder="请输入姓名">
+									<span class="bank-info"><i class="fa fa-user"></i></span>
+									<div class="bank-list" style="display: none;">
+										<div class="title">开户人名册<span class="close"><i class="fa fa-close"></i></span></div>
+										<div class="bank-list-con">
+											<ul>
+												<li>
+												</li>
+											</ul>
+										</div>
+										<div class="foot"></div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>省份</dt>
+								<dd>
+									<input type="text" name="bank_province" placeholder="请输入省份">
+								</dd>
+							</dl>
+							<dl>
+								<dt>城市</dt>
+								<dd>
+									<input type="text" name="bank_city" placeholder="请输入城市">
+								</dd>
+							</dl>
+							<dl class="dingmaohongsheng-dl-show" style="display:none;">
+								<dt class="bank_name_dt">银行名称</dt>
+								<dd>
+									<input type="text" name="bank_name" placeholder="请输入银行名称">
+								</dd>
+							</dl>
+							<dl class="dingmaohongsheng-dl-hide" style="display:none;">
+								<dt class="bank_name_dt">开户银行</dt>
+								<dd>
+									<input type="text" name="bank_name" placeholder="请输入开户银行">
+								</dd>
+							</dl>
+							<dl>
+								<dt>开户支行</dt>
+								<dd style="max-width: 1200px;">
+									<input type="text" name="bank_branch" placeholder="请输入开户支行">
+									<!--<div class="fill-tip">格式：广东省-深圳市-福田区-星河支行（不按此格式银行将无法入账）</div>-->
+								</dd>
+							</dl>
+							<dl>
+								<dt>银行卡号</dt>
+								<dd>
+									<input type="text" name="bank_card" placeholder="请输入银行卡号">
+								</dd>
+							</dl>
+							<dl>
+								<dt>出金金额</dt>
+								<dd>
+									<input type="text" name="from_money" placeholder="请输入出金金额">
+									<div class="fill-tip" id="withdrawLimit"></div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>备注</dt>
+								<dd>
+									<input type="text" name="comment" placeholder="请输入备注">
+								</dd>
+							</dl>
+							<dl>
+								<dt>可提现余额</dt>
+								<dd>
+									<input type="text" name="money" disabled>
+								</dd>
+							</dl>
+							<div>
+								<div class="c-submit-btn withdraw-but" style="margin:30px 50px 10px;">提交</div>
+							</div>
+							<dl class="tip--html-box" style="color:#fff;padding-bottom:30px;">
+								
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="../assets/js/page/withdraw.js"></script>
+		</div>
+	</body>
+
+</html>

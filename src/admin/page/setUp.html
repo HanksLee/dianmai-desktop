@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="您的网站名称" />
+	<meta name="description" content="您的网站名称" />
+	<meta name="author" content="">
+	<title>安全设置</title>
+	<link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/css.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="page-content">
+		<div class="title"><i class="fa fa-cog fa-fw"></i>安全设置<span class="right"
+				style="margin-right:38px;cursor: pointer;"><i class="fa fa-arrow-right"></i><a href="javascript:void(0);"
+					onclick="history.go(-1)" style="color:rgb(255,255,41);">返回</a></span></div>
+		<div class="content t20">
+			<div class="setUp-list">
+				<ul>
+					<li>
+						<span class="active"><i class="fa fa-check-circle"></i>登录密码</span>
+						<span>已设置</span>
+						<span><a href="javascript:;" class="login-pw" data-type="1">修改登录密码>></a></span>
+					</li>
+					<li style="display:none;">
+						<span class="active"><i class="fa fa-check-circle"></i>资金密码</span>
+						<span>已设置</span>
+						<span><a href="javascript:;" class="login-pw" data-type="2">修改资金密码>></a></span>
+					</li>
+					<!-- <li class="shipan-hide">
+   	  	  	  		<span>
+   	  	  	  			<i class="fa fa-exclamation-circle"></i>
+   	  	  	  		    实盘信息开放
+   	  	  	  	   </span>
+   	  	  	  		<div class="set_kf right"><div class="set_switch"></div></div>
+   	  	  	  	</li> -->
+				</ul>
+			</div>
+		</div>
+		<div class="projectileFrame">
+			<div class="bt"></div>
+			<div class="input-box">
+				<ul>
+					<li><span>原密码：</span><input type="password" name="oldPassword" placeholder="请输入原密码"></li>
+					<li><span>新密码：</span><input type="password" name="newPpassword" placeholder="请输入新密码"></li>
+					<li><span>确认密码：</span><input type="password" name="confirmPassword" placeholder="请再次输入新密码"></li>
+					<li style="position:relative;"><span>手机号码：</span><input type="text" name="mobile" placeholder="请再次手机号">
+						<div class="yanzhengma" id="yanzhengma"
+							style="position:absolute;right:35px;top:1px;color:#fff;padding:7px 6px;background:#C3181F;cursor: pointer;">
+							发送验证码</div>
+						<div id="mobileCode" class="hide"
+							style="position:absolute;right:35px;top:1px;color:#fff;padding:7px 6px;background:#C3181F;cursor: pointer;">
+						</div>
+					</li>
+					<li>
+						<span>验证码：</span><input type="text" name="code" placeholder="请输入验证码">
+					</li>
+					<li><button type="button" id="submitPw">确认</button></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bg"></div>
+		<script src="../assets/js/page/setUp.js"></script>
+	</div>
+
+
+
+</body>
+
+</html>

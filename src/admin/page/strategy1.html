@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="您的网站名称" />
+	<meta name="description" content="您的网站名称" />
+	<meta name="author" content="">
+	<title>我的策略</title>
+	<link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/css.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="page-content">
+		<div class="title" data-type="1"><i class="fa fa-external-link"></i><em>我的策略</em><span class="right" style="margin-right:38px;cursor: pointer;"><i
+				 class="fa fa-arrow-right"></i><a href="javascript:void(0);" onclick="history.go(-1)" style="color:rgb(255,255,0);">返回</a></span></div>
+		<div class="content" id="dingshiid1">
+			<div class="searchResult">
+					<div class="tab-type-box" style="display:none;">
+						<a href="#page/strategy.html" class="ss-btn1 loadPage gupian-a" data-type="0" style="display:none;">股票</a>
+						<a href="#page/strategy1.html" class="ss-btn1 loadPage zhishu-type1 active" data-type="1" style="display:none;">指数.</a>
+						<a href="#page/strategy2.html" class="ss-btn1 loadPage zhishu-type2" data-type="2" style="display:none;">指数</a>
+						  </div>
+				<div class="search-box">
+					<input type="text" name="keyword" placeholder="股票代码/股票名称">
+					<button type="submit" id="search-but"><i class="fa fa-search"></i></button>
+					<ul class="search-list">
+						<li class="tr-bg" style="text-align:center;color:#999;">数据加载中...</li>
+					</ul>
+				</div>
+				<div class="searchResult-box left" style="width:46%;">
+					<div class="left" style="width:80%;margin-bottom:10px;">
+						<h3>
+							<em class="shic-box"></em><strong class="stock_name" style="margin-left: 5px"></strong><em class="cfd-box" style="color:rgb(255,255,41);">(指数.)</em><em class="tipai" style="color:#C3181F;"></em><span
+							 class="stock_code"></span></h3>
+						<h4><span class="now_price_box"></span> <i class="fa fa-refresh" id="refresh"></i></h4>
+					</div>
+					<div class="right" style="width:100%">
+						<ul>
+							<li><span>今开：</span><span class="open_price"></span></li>
+							<li><span>最高：</span><span class="high_price"></span></li>
+							<li><span>最低：</span><span class="low_price"></span></li>
+							<li><span>涨停：</span><span class="limit_max"></span></li>
+							<li><span>跌停：</span><span class="limit_min"></span></li>
+							<li><span>振幅：</span><span class="limt_percent"></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="echart-t">
+				<div class="see-echart">查看行情</div>
+				<div class="echart-con">
+				<div class="echart-t-box">
+					<div class="ec-tab">
+						<span data-type="1" class="active">分时</span><span data-type="2">日K</span>
+					</div>
+					<div class="echart-box">
+						<div class="ma-box" style="display:none;">
+							<span style="color:rgb(40, 240, 100);" class="ma5">MA5：<em></em></span>
+							<span style="color:rgb(36, 153, 226);" class="ma10">MA10：<em></em></span>
+							<span style="color:#ffab42;" class="ma20">MA20：<em></em></span>
+							<span style="color:rgba(255,0,71,1);" class="ma30">MA30：<em></em></span>
+						</div>
+						<div id="k-line" style="width:100%;height:480px;"></div>
+					</div>
+					<div class="text-hide">加载中...</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="content product-box">
+			<div class="create-a-strategy" style="display:none">
+				<!-- <div class="product-tab">
+					<ul></ul>
+				</div> -->
+				<div class="product-con">
+					<ul>
+						<li class="left">
+							<div class="availableFunds w50 pd20">
+								<strong>可用资金:</strong>
+								<span style="color:#C3181F;"><em class="zj"></em><em class="em999">元</em></span>
+							</div>
+							<div class="bying-rate w50 pd20 stop-box">
+								<strong>手数:</strong>
+								<input type="" name="" class="input-span shoushu-input" placeholder="请输入手数">
+								<p style="padding-top:5px;">（可买最小手数<em class="min_shou"></em>手，最大可买手数<em class="max_shou"></em>手）</p>
+							</div>
+							<div class="w50" style="padding:0;">
+								<div class="winStopAt-jia">
+									<div class="w50 pd20 stop-box">
+										<strong>止盈价:</strong>
+										<input type="" name="" class="input-span target-profit-name0" placeholder="请输入止盈价">
+									</div>
+								</div>
+								<div class="loseStopAt-jia">
+									<div class="w50 pd20 stop-box">
+										<strong>止损价:</strong>
+										<input type="" name="" class="input-span stop-loss-name0" placeholder="请输入止损价">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="right">
+							<div class="service-charge w50 pd20">
+								<strong>手续费:</strong>
+								<span>0</span>
+							</div>
+							<div class="deferred-charge w50 pd20">
+								<strong>递延费:</strong>
+								<span><em class="diyan1">0</em>/<em class="diyan2">0</em><em class="em999">（元/交易日）</em></span>
+							</div>
+							<div class="deferred-charge w50 pd20 cankaohuilv-box" style="display:none">
+								<strong>参考汇率:</strong>
+								<span class="cankaohuilv"></span>
+							</div>
+							<div class="total w50 pd20">
+								<strong>总计(元):</strong>
+								<span style="color:#C3181F;">
+									<em class="gj-box"></em>
+								</span>
+							</div>
+						</li>
+					</ul>
+					<div class="c-submit-btn-box">
+						<span class="c-submit-btn purchase-but dianmai" data-cmd="0">多头合约</span>
+						<span class="c-submit-btn purchase-but dianmai-m" data-cmd="1">空头合约</span>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="strategy-tab">
+					<ul>
+						<li class="active dangqian boloniasia-hide" style="display:none;">当前策略</li>
+						<li class="jiesuan boloniasia-hide" style="display:none;">结算策略</li>
+						<li class="active dangqian boloniasia-show" style="display:none;">当前订单</li>
+						<li class="jiesuan boloniasia-show" style="display:none;">结算订单</li>
+					</ul>
+				</div>
+				<div class="table-list" id="strategy-table-list" style="overflow: hidden;width:958px;overflow-x:auto;">
+					<div class="table-strategy-list" style="display:block;">
+						<table id="current-strategy-list" class="current-strategy-list" style="width:1380px;">
+							<thead>
+								<tr>
+									<th width="400">操作</th>
+									<th width="100">订单号</th>
+									<th width="300">名称/代码</th>
+									<!--<th width="100">代码</th>-->
+									<!--<th width="100">交易市场</th>-->
+									<th width="100">方向</th>
+									<th width="100">浮动盈亏</th>
+									<!--<th width="120">操作资金</th>-->
+									<th width="120">可用数量</th>
+									<th width="100" class="jia-th">开仓均价</th>
+									<th width="100">当前价</th>
+									<th width="230">开仓时间</th>
+								</tr>
+							</thead>
+							<tbody style="font-size: 14px">
+							</tbody>
+						</table>
+						<div class="pagination-wrap">
+							<div class="M-box3 pagination1"></div>
+						</div>
+					</div>
+					<div class="table-strategy-list">
+						<table id="settlement-strategy-list" class="settlement-strategy-list" style="width:100%;">
+							<thead>
+								<tr>
+									<th width="100">订单号</th>
+									<th width="130">名称/代码</th>
+									<!--<th width="100">代码</th>-->
+									<th width="100">交易市场</th>
+									<th width="100">方向</th>
+									<!--<th width="120">操作资金</th>-->
+									<th width="110">数量</th>
+									<th width="100" class="jia-th1">均价/终止合约价</th>
+									<th width="100">获利</th>
+									<th width="200">开仓时间</th>
+									<th width="200">终止合约时间</th>
+									<th width="110">操作</th>
+								</tr>
+							</thead>
+							<tbody style="font-size: 14px;">
+							</tbody>
+						</table>
+						<div class="pagination-wrap">
+							<div class="M-box3 pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="projectileFrame sell-out-box">
+				<div class="bt">终止合约确认</div>
+				<div class="input-box">
+					<ul>
+						<li class="gumc"><strong>股票名称/代码：</strong><span style="width:260px;"></span></li>
+						<!-- <li class="mcsl"><strong>卖出数量：</strong><input type="" name="" disabled="disabled"><span style="color:#999;" class="zhishao">(至少卖100股)</span></li> -->
+						<li class="mcsl"><strong>卖出数量：</strong><input type="" name="" disabled="disabled"></li>
+						<li class="zxjg"><strong>最新价格：</strong><span></span></li>
+						<li>
+							<button class="queren" id="queren">确认</button>
+							<button class="quxiao">取消</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bg"></div>
+			<!-- 买入弹框-->
+			<div class="purchase-frame">
+				<div class="queren-bt">确认下单</div>
+				<p>请确认是否已详细了解交易所需的费用和可能面临的风险，点击继续提交订单，订单将以市价成交。</p>
+				<div class="mr-but-box"><button class="jixu-but" id="jixu-but">继续</button><button class="quxiao-but">取消</button></div>
+			</div>
+			<!-- 止盈止损 -->
+			<div class="projectileFrame zhiying-zhishui-box">
+				<div class="bt">止盈止损</div>
+				<div class="input-box">
+					<ul>
+						<li class="gpmc-dm"><strong>股票名称/代码：</strong><span style="width:260px;"></span></li>
+						<li class="zhiying-t tp_sl_witch-00 zhiying-t-0"><strong>止盈金额：</strong><input type="" name=""></li>
+						<li class="zhishui-t tp_sl_witch-00 zhishui-t-0"><strong>止损金额：</strong><input type="" name=""></li>
+						<li class="zhiying-t tp_sl_witch-11 zhiying-t-1"><strong>止盈价：</strong><input type="" name=""></li>
+						<li class="zhishui-t tp_sl_witch-11 zhishui-t-1"><strong>止损价：</strong><input type="" name=""></li>
+						<li>
+							<button class="queren" id="zhi-but">确认</button>
+							<button class="quxiao">取消</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 关闭递延-->
+			<div class="guanbi-diyan">
+				<div class="guanbi-diyan-bt">关闭递延</div>
+				<p style="text-align:Center;"></p>
+				<div class="mr-but-box"><button class="diyan-but" id="diyan-but">确认</button><button class="quxiao-but">取消</button></div>
+			</div>
+		</div>
+		<link rel="stylesheet" href="../assets/js/plugins/pagination/pagination.css">
+		<script type="text/javascript" src="../assets/js/plugins/pagination/jquery.pagination.js"></script>
+		<script type="text/javascript" src="../assets/js/echarts/echarts.min.js"></script>
+		<script type="text/javascript" src="../assets/js/page/strategy1.js"></script>
+		<script src="../assets/js/page/spread.js"></script>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="您的网站名称" />
+    <meta name="description" content="您的网站名称" />
+    <meta name="author" content="" />
+    <title>线下汇款</title>
+  </head>
+
+  <body>
+    <div class="page-content">
+      <div class="title">
+        <i class="fa fa-user-circle-o"></i>线下汇款<span
+          class="right"
+          style="margin-right: 38px; cursor: pointer;"
+          ><i class="fa fa-arrow-right"></i
+          ><a
+            href="javascript:void(0);"
+            onclick="history.go(-1)"
+            style="color: rgb(255, 255, 41);"
+            >返回</a
+          ></span
+        >
+      </div>
+      <div class="content t20">
+        <div class="account-box">
+          <div class="content-wrap">
+            <div class="fill-form fill-form2" id="rechargeForm">
+              <dl>
+                <dt class="off-line-money"></dt>
+                <dd>
+                  <dt id="money-value"></dt>
+                </dd>
+              </dl>
+              <dl>
+                <p style="font-size: 20px;color: rgb(221, 221, 221);">收款帐户</p>
+              </dl>
+              <dl style="padding: 5px 0px 10px;" class="receive-container">
+                <dt>帐户名称</dt>
+                <dd>
+                  <dt id="account_name" class="receive-info"></dt>
+                  <dt>                
+                    <a class="copy-btn" data-clipboard-target="#account_name">复制</a>
+                  </dt>
+                </dd>
+              </dl>
+              <dl style="padding: 5px 0px 10px;" class="receive-container">
+                <dt>帐户银行</dt>
+                <dd>
+                  <dt id="account_bank" class="receive-info"></dt>
+                  <dt>                
+                    <a class="copy-btn" data-clipboard-target="#account_bank">复制</a>
+                  </dt>
+                </dd>
+              </dl>
+              <dl style="padding: 5px 0px 10px;" class="receive-container">
+                <dt>帐户支行</dt>
+                <dd>
+                  <dt id="account_branch" class="receive-info"></dt>
+                  <dt>                
+                    <a class="copy-btn" data-clipboard-target="#account_branch">复制</a>
+                  </dt>
+                </dd>
+              </dl>
+              <dl style="padding: 5px 0px 10px;" class="receive-container">
+                <dt>帐户卡号</dt>
+                <dd>
+                  <dt id="account_card" class="receive-info"></dt>
+                  <dt>                
+                    <a class="copy-btn" data-clipboard-target="#account_card">复制</a>
+                  </dt>
+                </dd>
+              </dl>
+              <dl>
+                <p style="font-size: 20px;color: rgb(221, 221, 221);">付款帐户(以下栏位皆为必填)</p>
+              </dl>
+              <dl style="padding: 5px 0px 10px;" class="receive-container">
+                <dt>付款人姓名</dt>
+                <dd>
+                  <input type="text" name="bank_user_name">
+                </dd>
+              </dl>
+              <dl style="padding: 5px 0px 10px;" class="receive-container">
+                <dt>付款银行</dt>
+                <dd>
+                  <input type="text" name="bank_name">
+                </dd>
+              </dl>
+              <dl style="padding: 5px 0px 10px;" class="receive-container">
+                <dt>付款帐号</dt>
+                  <dd>
+                    <input type="text" name="bank_card">
+                  </dd>
+              </dl>
+
+              <dl style="overflow:hidden;height:360px;">
+								<dt>已支付回单截频</dt>
+								<dd class="uploadPic nonePic">
+									<div class="card-img"  style="width:460px;height:300px;border:1px solid #ccc;position: relative;">
+											<div style="text-align: center; position: absolute; top: 100px; right: 180px; color:#ccc;">
+												<i class="fa fa-cloud-upload" style="font-size:100px;"></i>
+												<div>点击上传</div>
+											</div>
+											<input type="file" name="id_file_name1" id="id_file_name1" style="position: absolute;
+											top: 0;
+											right: 0;
+											width:460px;height:300px;
+											opacity: 0;">
+										<img src="" alt="" style="width:460px;height:300px;">
+									</div>
+								</dd>
+							</dl>
+
+              <dl>
+                <a class="c-submit-btn" id="rechargeSubmit" target="_blank"
+                  >已确认支付</a>
+              </dl>
+            </div>
+            <div class="bg"></div>
+          </div>
+        </div>
+      </div>
+      <script
+        type="text/javascript"
+        src="../assets/js/page/offLineTrans.js"
+      ></script>
+    </div>
+  </body>
+</html>

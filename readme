@@ -1,0 +1,30 @@
+﻿安装依赖：
+    1 npm install
+    2 npm install --global gulp
+    3 安装ruby
+    4 安装sass gem install sass
+
+启动：
+    gulp serve
+
+*注意事项
+本项目采用gulp-rev + gulp-rev-collector 项目进行版本号替换
+由于插件生成的版本号为xx.md5.js格式，期望生成格式为xx.js?v=md5，需要对插件进行以下更改
+1.修改 node_modules/gulp-rev/index.js
+第 133 行
+原始:	manifest[originalFile] = revisionedFile;
+更改为：manifest[originalFile] = originalFile + '?v=' + file.revHash;
+
+
+2.修改 node_modules/gulp-rev/node_modules/rev-path/index.js
+第 10 行
+原始:	return filename + '-' + hash + ext;
+更改为：return filename + ext;
+或者改为：return modifyFilename(pth, (filename, ext) => `${filename}${ext}`);
+
+3.修改 node_modules/gulp-rev-collector/index.js 第 40 行
+原始：let cleanReplacement =  path.basename(json[key]).replace(new RegExp( opts.revSuffix ), '' );
+更改为：let cleanReplacement = path.basename(json[key]).split('?')[0];
+
+
+发布正式版本：gulp dist

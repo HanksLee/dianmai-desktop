@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="keywords" content="您的网站名称" />
+   <meta name="description" content="您的网站名称" />
+   <meta name="author" content="">
+   <title>策略详情</title>
+   <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/reset.css" rel="stylesheet">
+   <link href="css/css.css" rel="stylesheet">
+</head>
+
+<body>
+   <div class="page-content" id="strategyDetails">
+      <div class="title"><i class="fa fa-external-link"></i><em id="celvxiangq">策略详情</em><span class="right"
+            style="margin-right:38px;cursor: pointer;"><i class="fa fa-arrow-right"></i><a href="javascript:void(0);"
+               onclick="history.go(-1)" style="color:#fff;">返回</a></span></div>
+      <div class="content details-box">
+         <dl class="jiaoyi-type">
+            <dd>
+               <strong>交易类型：</strong>
+               <span class="zhishu-span">指数.</span>
+            </dd>
+         </dl>
+         <dl class="jiaoyi-type1">
+            <dd>
+               <strong>交易类型：</strong>
+               <span class="zhishu-span">指数</span>
+            </dd>
+         </dl>
+         <dl>
+            <dd>
+               <strong>交易市场：</strong>
+               <span class="market-type"></span>
+               <span class="tingpai" style="color:#C3181F;display:none"></span>
+            </dd>
+            <dd class="buy-exchange-rate-box" style="display:none;">
+               <strong>开仓汇率：</strong>
+               <span class="buy-exchange-rate"></span>
+            </dd>
+            <dd class="close-rates close-rates-box" style="display:none;">
+               <strong>平仓汇率：</strong>
+               <span class="close-rate"></span>
+            </dd>
+         </dl>
+         <dl>
+            <dd>
+               <strong>名称/代码：</strong>
+               <span class="name-code"></span>
+            </dd>
+            <dd>
+               <strong>产品类型：</strong>
+               <span class="product-type"></span>
+            </dd>
+            <dd>
+               <strong>资金配比：</strong>
+               <span class="capitalRatio"></span>
+            </dd>
+         </dl>
+         <dl class="borderBottom profit-dl">
+            <dd>
+               <strong class='bond_name'></strong>
+               <span class="bond"></span>
+            </dd>
+            <dd>
+               <strong>获利金额：</strong>
+               <span class="profiting-amount"></span>
+               <em>?</em>
+            </dd>
+         </dl>
+         <dl>
+            <dd>
+               <strong>方向<i class="duo-kong-hide" style="display:none;">（多头/空头）</i>：</strong>
+               <span class="direction"></span>
+            </dd>
+            <dd>
+               <strong>开仓时间：</strong>
+               <span class="buying-time"></span>
+            </dd>
+            <dd>
+               <strong class="jia-strong-kai">开仓均价：</strong>
+               <span class="buy-average"></span>
+            </dd>
+         </dl>
+         <dl class="selling-dl" style="display:none">
+            <dd>
+               <strong>平仓时间：</strong>
+               <span class="selling-time"></span>
+            </dd>
+            <dd>
+               <strong class="jia-strong-ping">平仓均价：</strong>
+               <span class="sell-the-average-price"></span>
+            </dd>
+         </dl>
+         <dl>
+            <dd>
+               <strong>持有数量：</strong>
+               <span class="buying-quantity"></span>
+            </dd>
+            <dd>
+               <strong>开仓金额：</strong>
+               <span class="buy-amount"></span>
+            </dd>
+            <dd>
+               <strong>可用数量：</strong>
+               <span class="sell-quantity"></span>
+            </dd>
+         </dl>
+         <dl class="transfer-profit-dl offset">
+            <dd>
+               <strong>平仓盈亏： </strong>
+               <span class="offset-profit-and-loss"></span>
+               <em>?</em>
+            </dd>
+         </dl>
+         <!-- <dl class="borderBottom transfer-profit-dl">
+              <dd>
+                 <strong>转让盈亏：</strong>
+                 <span class="transfer-profit-and-loss"></span>
+                 <em>?</em>
+              </dd>
+           </dl> -->
+         <dl class="borderBottom jiner" style="display:none;">
+            <dd class="zhiyingjin" style="display:none;">
+               <strong>止盈金额：</strong>
+               <span class="tp-jin"></span>
+            </dd>
+            <dd class="zhisuijin" style="display:none;">
+               <strong>止损金额：</strong>
+               <span class="sl-jin"></span>
+            </dd>
+         </dl>
+         <dl class="borderBottom jiage" style="display:none;">
+            <dd class="zhiyingjia" style="display:none;">
+               <strong>止盈价：</strong>
+               <span class="tp-jia"></span>
+            </dd>
+            <dd class="zhisuijia" style="display:none;">
+               <strong>止损价：</strong>
+               <span class="sl-jia"></span>
+            </dd>
+         </dl>
+         <dl class="borderBottom curent transfer-profit-dl">
+            <dd>
+               <strong>当前市值：</strong>
+               <span class="current-market-value"></span>
+            </dd>
+            <dd>
+               <strong>当前价格：</strong>
+               <span class="current-price"></span>
+            </dd>
+            <dd>
+               <strong>当前盈亏：</strong>
+               <span class="current-profit-and-loss"></span>
+               <em>?</em>
+            </dd>
+         </dl>
+         <dl class="borderBottom dl-2 dl-gupian">
+            <dd>
+               <strong>买入费用(手续费+管理费+券商代扣)：</strong>
+               <span class="buy-cost"></span>
+            </dd>
+            <dd>
+               <strong>卖出费用(手续费+券商代扣)：</strong>
+               <span class="selling-cost"></span>
+            </dd>
+         </dl>
+         <dl class="borderBottom dl-2 shuhui dl-gupian" style="display:none">
+            <dd>
+               <strong>赎回手续费：</strong>
+               <span class="shuhui-cost"></span>
+            </dd>
+            <dd>
+               <strong>赎回费率：</strong>
+               <span class="shuhui-feilv"></span>
+            </dd>
+         </dl>
+         <dl class="borderBottom dl-2 dl-gupian">
+            <dd>
+               <strong>递延费/递延天数：</strong>
+               <span class="fer"></span>
+            </dd>
+            <!-- <dd class="noRuthinks">
+               <strong>平台盈利分成：</strong>
+               <span class="platform-profit-sharing"></span>
+            </dd> -->
+         </dl>
+         <dl class="borderBottom dl-2 dl-diancha" style="display:none">
+            <dd>
+               <strong>买入手续费：</strong>
+               <span class="mairushouxufei"></span>
+            </dd>
+            <dd>
+               <strong>卖出手续费：</strong>
+               <span class="maichushouxufei"></span>
+            </dd>
+            <dd style="margin-top:14px;">
+               <strong>递延费/递延天数：</strong>
+               <span class="diyanfei"></span>
+            </dd>
+         </dl>
+      </div>
+      <div class="bg"></div>
+      <!-- 转让盈亏-->
+      <div class="guanbi-diyan" style="top:20%">
+         <div class="guanbi-diyan-bt">当前盈亏</div>
+         <p style="text-align:Center;">当前盈亏不包含建仓费用以及递延费用</p>
+         <div class="mr-but-box" style="text-align:center;"><button class="diyan-but" id="diyan-but">关闭</button></div>
+      </div>
+      <div class="profit-modal" style="top:20%">
+         <div class="profit-modal-bt">获利金额</div>
+         <p style="text-align:Center;">当前盈亏不包含建仓费用以及递延费用</p>
+         <div class="mr-but-box" style="text-align:center;"><button class="diyan-but" id="diyan-but">关闭</button></div>
+      </div>
+      <script src="../assets/js/page/strategyDetails.js"></script>
+   </div>
+</body>
+
+</html>

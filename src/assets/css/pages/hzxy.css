@@ -1,0 +1,24 @@
+.hzxy-title {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.hzxy-title a {
+  color: white;
+  font-size: 16px;
+  background-color: #c3181f;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+p.hzxy-content {
+  color: white;
+  padding: 50px 0;
+}
